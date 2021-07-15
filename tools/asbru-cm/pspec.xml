@@ -3,15 +3,15 @@
 <PISI>
     <Source>
         <Name>asbru-cm</Name>
-        <Homepage>https://cloudsmith.io/~asbru-cm/repos/snapshots/packages/detail/deb/asbru-cm/6.2.2~1596722846-1/d=linuxmint%252Fsonya;xp=1</Homepage>
+        <Homepage>https://www.microsoftedgeinsider.com/en-us/download</Homepage>
         <Packager>
-            <Name>Mrnitr0</Name>
+            <Name>Gavin Zhao</Name>
             <Email>74938940+GZGavinZhao@users.noreply.github.com</Email>
         </Packager>
-        <Summary>Asbru-CM</Summary>
-        <Description>Asbru-CM</Description>
+        <Summary>The web browser from Microsoft</Summary>
+        <Description>asbru-cm is a browser that combines a minimal design with sophisticated technology to make the web faster, safer, and easier</Description>
         <License>Proprietary</License>
-        <Archive sha1sum="5e170238832b42aca3b2a21cc8712bb2dbb9a0b6" type="binary">https://dl.cloudsmith.io/public/asbru-cm/snapshots/deb/linuxmint/pool/sonya/main/a/as/asbru-cm_6.2.2~1596722846-1_all.deb</Archive>
+        <Archive sha1sum="5e170238832b42aca3b2a21cc8712bb2dbb9a0b6" type="binary">http://transfer.sh/b1/asbru-cm_6.2.2-1.deb</Archive>
         <BuildDependencies>
             <Dependency>libxscrnsaver</Dependency>
             <Dependency>gconf</Dependency>
@@ -34,8 +34,8 @@
     <History>
         <Update release="3">
             <Date>28-03-2020</Date>
-            <Version>6.2.2~1596722846</Version>
-            <Comment>Update Asbru-cm</Comment>
+            <Version>6.2.2</Version>
+            <Comment>Update asbru-cm version 6.2.2, adds Linux sync ability</Comment>
             <Name>Gavin Zhao</Name>
             <Email>74938940+GZGavinZhao@users.noreply.github.com</Email>
         </Update>
