@@ -1,0 +1,35 @@
+name: Checksum
+
+# Controls when the action will run. 
+on:
+  workflow_dispatch:
+    inputs:
+      link:
+        description: 'Link to .deb file to get Checksum of'
+        required: true
+        default: ''
+      extension:
+        description: 'File Extension to get Checksum of'
+        required: true
+        default: '.deb'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Fetch file
+        uses: wei/wget@master
+        with:
+          args: ${{ github.event.inputs.link }}
+        
+      - name: SHA-1 Checksum
+        run: sha1sum *${{ github.event.inputs.extension }}
+        
+      - name: MD5 Checksum
+        run: md5sum *${{ github.event.inputs.extension }}
+        
+      - name: SHA-256 Checksum
+        run: sha256sum *${{ github.event.inputs.extension }}
